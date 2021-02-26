@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <script src="../javascript/javascript.js"></script>
+    <title>Cybeer-Contacto</title>
+</head>
+
+<body>
+    <!-- Barras Naranjas -->
+    <div id="left-bar"></div>
+    <div id="right-bar"></div>
+
+
+    <!-- NAV BAR DE BOOSTRAP CON CAMBIOS PERSONALES -->
+    <nav id="navPrincipal" class="navbar sticky-top navbar-expand-custom">
+        <a class="navbar-brand" style="color:white" href="../index.html#">CYBEER</a>
+        <button id="tb1" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="toggleButton" onclick="showAndHideButtonBorder()">
+        <div id="nti" class="navbar-toggler-icon"></div>
+      </span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html#Introduccion">INTRODUCCIÓN <span class="sr-only">(current)</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../subpaginas/servicios.html#">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../subpaginas/eventos.html#">EVENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../subpaginas/torneos.html#">TORNEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../subpaginas/contacto.html#">CONTACTO</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button id="navBarButton" class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- CONTENIDO -->
+
+    <div style="padding-top: 10%; padding-bottom: 10%;" class="content">
+        <!-- Jumbotron -->
+        <div style="margin: 0 auto" class="jumbotron">
+            <h1 style="color: #ea9e0a" class="display-4">Contacto</h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <p>Aquí podrás ponerte en contacto con nosotros, puedes preguntarnos lo que sea, por ejemplo:</p>
+            <ul>
+
+                <li>¿Cómo ser cliente VIP para participar en torneos?</li>
+                <li>¿Cómo reservar una sala con tus amigos?</li>
+                <li>¿Cuál es el precio/hora?</li>
+                <li>¿Cuál es la variedad de tapas que ofrecemos en barra?</li>
+
+            </ul>
+            <button style="margin-top: 2.5%;" type="button" class="btn btn-primary btn-warning" data-toggle="modal" data-target="#exampleModal1">
+                ¡Contacta con nosotros!
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Inicial con mapa y botones para llamar o mandar email -->
+    <div class=" modal1 modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡Contacta con nosotros!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <h6>¿Donde nos encontramos?</h6>
+                    <div class="gmap_canvas">
+                        <div class="mapouter">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Ctra.%20Co%C3%ADn,%2035,%2029140%20M%C3%A1laga&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div style="margin: 0 auto;">
+                        <!-- PopOver Llamada -->
+                        <button id="llamanosBtn" type="button" class="btn btn-warning btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="+34 952000000">
+                            Llámanos
+                          </button>
+                        <button onclick="hideModal1()" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">Enviar Correo</button>
+
+                        <!-- CORREO MODAL -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Enviar Correo</h5>
+                                        <button onclick="showModal1()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="formGeneral" action="/subpaginas/contacto.html">
+                                            <label for="exampleInputPassword1">Nombre y Apellidos</label>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Nombre" required>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Apellidos" required>
+                                                </div>
+                                            </div>
+
+                                            <div style="margin-top: 15px;" class="form-group">
+                                                <label for="exampleFormControlSelect1">Género</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                  <option>Femenino</option>
+                                                  <option>Masculino</option>
+                                                  <option>Sin especificar</option>
+                                                </select>
+                                            </div>
+                                            <div style="margin-top: 15px;" class="form-group">
+                                                <label for="exampleInputEmail1">Dirección de correo</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                                <small id="emailHelp" class="form-text text-muted">No compartiremos tus datos con nadie.</small>
+                                            </div>
+                                            <label for="exampleInputPassword1">Contraseña</label>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" required>
+                                                    <small id="passwordHelp" class="form-text text-muted">Debe tener entre 8-20 caracteres.</small>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirma contraseña" required>
+                                                    <small id="passwordHelp2" class="form-text text-muted">Debe coincidir ambas contraseñas.</small>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 15px;" class="form-group">
+                                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+
+                                            <div style="margin-top: 15px;" class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                                <label class="form-check-label" for="exampleCheck">He leido y acepto la <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" href="#">Pólitica de Privacidad y Condiciones de Uso</a></label>
+
+                                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                    <div class="card-body">
+                                                        <h6>1. Introducción</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>2. Licencia</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>3. Contenido y limitación de responsabilidad</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>4. Acceso al sitio Web. Interrupción y suspensión</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>5. Protección de datos personales</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>6. Derechos de propiedad intelectual</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>7. Enlaces a otros sitios web</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>8. Representaciones y garantías del usuario</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                        <h6>9. Disposiciones diversas</h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu libero cursus, vulputate arcu quis, feugiat dolor. Pellentesque fringilla risus in lobortis volutpat. Integer id enim fermentum,
+                                                            vestibulum dui vel, tincidunt justo. Nullam eget nisl eu odio commodo convallis sit amet sit amet velit. Nulla augue tellus, facilisis eget aliquam at, tristique ut dui. Aenean auctor ante nunc,
+                                                            vel feugiat orci convallis et. Vivamus non libero eget nisi sodales vehicula ac id nunc. Pellentesque ultricies sem sollicitudin, tristique augue vitae, mattis lorem. Phasellus et tincidunt turpis.
+                                                            Aenean at mauris eget ante pharetra sagittis. Etiam molestie lorem eu laoreet mollis. Nunc fermentum est eget ante commodo, at laoreet dui egestas. Class aptent taciti sociosqu ad litora torquent
+                                                            per conubia nostra, per inceptos himenaeos. Sed et arcu vel quam porta placerat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button onclick="showModal1()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button form="formGeneral" type="submit" class="btn btn-warning">Enviar</button >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <footer style="margin-top: 15px;" class="footerStyle">
+        <p style="display: inline-block; margin-right: 10px;"><b>Dirección: </b>Ctra. Coín, 35, 29140 Málaga</p>
+        <p style="margin-right: 10px;" class="p1"><b>Correo: </b>cybeer@gmail.com</p>
+        <p class="p1"><b>Teléfono: </b>952000000</p>
+        <br>
+        <img style="width: 15px; display: inline-block;" src="../imagen/facebookIcon.png" alt="">
+        <p style="margin-right: 10px; " class="p1"><b>Facebook: </b><a href="https://www.facebook.com/">Cybeer</a></p>
+        <img style="width: 15px; display: inline-block;" src="../imagen/twitterIcon.png" alt="">
+        <p style="margin-right: 10px;" class="p1"><b>Twitter: </b><a href="https://twitter.com/">Cybeer</a></p>
+        <img style="width: 15px; display: inline-block;" src="../imagen/instagramIcon.png" alt="">
+        <p class="p1"><b>Instagram: </b><a href="https://www.instagram.com/">Cybeer</a></p>
+        <br>
+        <p class="p1" style="display: inline-block;">Página creada y diseñada por: </p>
+        <p class="p1"><a href="https://github.com/FESEVA">FESEVA</a></p>
+
+    </footer>
+</body>
+
+
+
+</html>

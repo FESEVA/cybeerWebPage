@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <script src="javascript/javascript.js"></script>
+    <title>Cybeer</title>
+</head>
+
+<body>
+    <div id="left-bar"></div>
+    <div id="right-bar"></div>
+
+
+    <!-- NAV BAR DE BOOSTRAP CON CAMBIOS PERSONALES -->
+    <nav id="navPrincipal" class="navbar sticky-top navbar-expand-custom">
+        <a class="navbar-brand" style="color:white" href="#">CYBEER</a>
+        <button id="tb1" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="toggleButton" onclick="showAndHideButtonBorder()">
+        <div id="nti" class="navbar-toggler-icon"></div>
+      </span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Introduccion">INTRODUCCIÓN <span class="sr-only">(current)</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subpaginas/servicios.html#">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subpaginas/eventos.html#">EVENTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subpaginas/torneos.html#">TORNEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subpaginas/contacto.html#">CONTACTO</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button id="navBarButton" class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Titulo -->
+    <h1 class="tittlestyle">C Y B E E R</h1>
+    <!-- LOGO -->
+    <div id="logoStyle">
+
+        <img width="100%" src="imagen/logo.png" alt="Logo Cybeer">
+    </div>
+    <p class="italicunderlogo">¿Vamos de tapeo o nos quedamos jugando? ¿Por qué no ambas?</p>
+    <br class="brStyle">
+    <hr class="hrseparator">
+
+    <!-- CONTENIDO -->
+
+    <div class="content">
+
+        <section id="hero">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img style="filter: blur(3px);" class="d-block w-100" src="imagen/gaming.jpg" alt="Gaming">
+                        <div class="carousel-caption d-none d-sm-block bgCarousell">
+                            <h5>Gaming</h5>
+                            <p>Podrás jugar a juegos de videoconsolas y de PC.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="filter: blur(3px);" class="d-block w-100" src="imagen/hosteleria.jpg" alt="Hosteleria">
+                        <div class="carousel-caption d-none d-sm-block bgCarousell">
+                            <h5>Hosteleria</h5>
+                            <p>Mientras juegas podrás beber y comer a la carta.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="filter: blur(3px);" class="d-block w-100" src="imagen/eventos.jpg" alt="Eventos">
+                        <div class="carousel-caption d-none d-sm-block bgCarousell">
+                            <h5>Eventos</h5>
+                            <p>Se celebrarán eventos de caracter amistoso o competitivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <hr class="hrseparator">
+
+    <div class="content">
+
+        <div id="Introduccion" class="darkMode">
+            <h2>INICIATIVA</h2>
+            <p>
+                <b>Cybeer</b>, es una idea emprendedora desarrollada y diseñada por <b>Fernando Iván Sevilla Valderrama</b>, consiste en juntar dos de los campos actuales en los jovenes como son, el arte del <b>tapeo y el gaming</b>.
+            </p>
+            <img style="width: 15px; display: inline-block;" src="imagen/checkBox.png" alt="">
+            <p class="pdm">Descanso, ocio y un lugar para estar con tus amigos haciendo lo que más os gusta. </p>
+            <br>
+            <img style="width: 15px; display: inline-block;" src="imagen/checkBox.png" alt="">
+            <p class="pdm">Disfruta del servicio en barra, acceso a inscripciones a torneos y eventos. </p>
+            <br>
+            <img style="width: 15px; display: inline-block;" src="imagen/checkBox.png" alt="">
+            <p class="pdm">Enfocado para crear una gran comunidad para evolucionar el sector del gaming.</p>
+        </div>
+    </div>
+    <footer style="margin-top: 15px;" class="footerStyle">
+        <p style="display: inline-block; margin-right: 10px;"><b>Dirección: </b>Ctra. Coín, 35, 29140 Málaga</p>
+        <p style="margin-right: 10px;" class="p1"><b>Correo: </b>cybeer@gmail.com</p>
+        <p class="p1"><b>Teléfono: </b>952000000</p>
+        <br>
+        <img style="width: 15px; display: inline-block;" src="imagen/facebookIcon.png" alt="">
+        <p style="margin-right: 10px; " class="p1"><b>Facebook: </b><a href="https://www.facebook.com/">Cybeer</a></p>
+        <img style="width: 15px; display: inline-block;" src="imagen/twitterIcon.png" alt="">
+        <p style="margin-right: 10px;" class="p1"><b>Twitter: </b><a href="https://twitter.com/">Cybeer</a></p>
+        <img style="width: 15px; display: inline-block;" src="imagen/instagramIcon.png" alt="">
+        <p class="p1"><b>Instagram: </b><a href="https://www.instagram.com/">Cybeer</a></p>
+        <br>
+        <p class="p1" style="display: inline-block;">Página creada y diseñada por: </p>
+        <p class="p1"><a href="https://github.com/FESEVA">FESEVA</a></p>
+
+    </footer>
+</body>
+
+
+
+</html>
